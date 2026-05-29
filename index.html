@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cloud PC Service</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="background:#0f0f0f;color:white;font-family:Arial;text-align:center;padding-top:80px;">
+
+  <h1>☁️ Cloud PC Service</h1>
+  <p>Get instant access to a Windows desktop in the cloud</p>
+
+  <button onclick="startPC()" style="padding:15px 25px;font-size:18px;">
+    Start Desktop
+  </button>
+
+  <p id="status"></p>
+
+  <script>
+    function startPC() {
+      document.getElementById("status").innerText = "Starting virtual PC...";
+      
+      setTimeout(() => {
+        document.getElementById("status").innerText = "No server connected yet (next step: cloud backend)";
+      }, 2000);
+    }
+  </script>
+
+</body>
+</html>
